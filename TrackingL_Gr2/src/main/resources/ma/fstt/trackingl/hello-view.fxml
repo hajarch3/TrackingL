@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="355.0" prefWidth="466.0"  spacing="20.0"  xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label text="Nom :" />
+      <TextField fx:id="nom" />
+      <Label text="Telephone" />
+      <TextField fx:id="tele" />
+       <Label text="Matricule :" />
+       <TextField fx:id="matricule" />
+      <Button fx:id="ok"  mnemonicParsing="false" onAction="#onSaveButtonClick" text="Save" />
+
+       <Button fx:id="del" mnemonicParsing="false" onAction="#deleteButton" text="Delete" />
+      <TableView fx:id="mytable" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="60.0" text="id" />
+          <TableColumn fx:id="col_nom" prefWidth="75.0" text="nom" />
+            <TableColumn fx:id="col_tele" prefWidth="75.0" text="telephone" />
+            <TableColumn fx:id="col_mat" prefWidth="75.0" text="matricule" />
+
+
+        </columns>
+      </TableView>
+
+   </children>
+
+ 
+</VBox>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="355.0" prefWidth="466.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.CommandeViewController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label text="Date début :" />
+        <TextField fx:id="datd" />
+        <Label text="Date fin" />
+        <TextField fx:id="datf" />
+        <Label text="KM :" />
+        <TextField fx:id="km" />
+        <Label text="Client :" />
+        <TextField fx:id="cl" />
+        <Label text="Etat :" />
+        <TextField fx:id="e" />
+        <Button fx:id="ok"  mnemonicParsing="false" onAction="#OnSaveButtonClick" text="Save" />
+
+        <Button fx:id="delete" mnemonicParsing="false" onAction="#deleteButton" text="Delete" />
+        <TableView fx:id="thetable" prefHeight="200.0" prefWidth="200.0">
+            <columns>
+                <TableColumn fx:id="colo_id" prefWidth="60.0" text="id" />
+                <TableColumn fx:id="col_debut" prefWidth="75.0" text="Date_debut" />
+                <TableColumn fx:id="col_fin" prefWidth="75.0" text="Date_fin" />
+                <TableColumn fx:id="col_k" prefWidth="75.0" text="Km" />
+                <TableColumn fx:id="col_cli" prefWidth="75.0" text="Client" />
+                <TableColumn fx:id="col_et" prefWidth="75.0" text="Etat" />
+
+
+            </columns>
+        </TableView>
+
+    </children>
+
+</VBox>
